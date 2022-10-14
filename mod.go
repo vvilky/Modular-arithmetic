@@ -1,5 +1,5 @@
 package main
-
+// create by whatislovevladislav@gmail.com
 import (
 	"fmt"
 	"math"
@@ -36,18 +36,18 @@ func main() {
 
 	rand.Seed(time.Now().UnixNano())
 
-	fmt.Print("Введите модуль: ")
+	fmt.Print("Введіть модуль: ")
 	fmt.Fscan(os.Stdin, &m)
 	fmt.Println("розв’язувати рівняння виду a^b mod m = x")
-	fmt.Print("Введите число: ")
+	fmt.Print("Введіть число: ")
 	fmt.Fscan(os.Stdin, &x1)
 	fmt.Print("Введите степень: ")
 	fmt.Fscan(os.Stdin, &y1)
 	fmt.Println("Остаток :", mod(x1, y1, m))
 	fmt.Println("розв’язувати рівняння виду  a*x ≡ b mod m")
-	fmt.Print("Введите первое число: ")
+	fmt.Print("Введіть перше число: ")
 	fmt.Fscan(os.Stdin, &a)
-	fmt.Print("Введите второе число : ")
+	fmt.Print("Введіть друге число : ")
 	fmt.Fscan(os.Stdin, &b)
 	fmt.Println("Найбільший спільний дільник GCD:", GCD2(a, b))
 	fmt.Println("просте число у діапазоні від A до B")
